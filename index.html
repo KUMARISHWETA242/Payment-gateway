@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Sparks Foundation</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./icons/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <!-- for icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href="./donate.html"> -->
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <img src="./img/logo.png" alt="LOGO" class="logo">
+                <ul class="nav-items">
+                    <li class="nav-item "><a href="#" class="text-white md-heading">HOME</a></li>
+                    <li class="nav-item"><a href="#about" class=" text-white md-heading">ABOUT US</a></li>
+                    <li class="nav-item"><a href="#goal" class=" text-white md-heading">GOALS</a></li>
+                    <li class="nav-item"><a href="#contact" class=" text-white md-heading">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="MAIN_HEADING">
+            <h1 class=" lg-heading text-white thought">STAY TOGETHER,GROW TOGETHER</h1>
+            <p class="text-white md-heading">Helping others is the way we help ourselves</p>
+            <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_HlNLYCGX0uRUsv" async> </script> </form>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="about-container container">
+            <div class="about-content">
+                <h3 class="text-black md-heading">ABOUT US</h3>
+                <p>The sparks foundation is working to bring parity in education, making sure children
+                     have equal opportunity at success, irrespective of the financial background.We must indulge in the
+                      habit of charity only when it runs in the family. The children will also inculcate only when 
+                      we remain sensitive  towards the need of children and family members. 
+                      After that, we can go out and help others. </p>
+
+            </div>
+            <div class="about-img">
+                <img src="./img/chiller.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about md-heading" id="goal" >
+        <hr><hr>
+        <h3>GOALS</h3> 
+        <hr><hr>
+        <div class="container">
+            <div class="picture pic1 md-heading text-white">
+               Education is the ticket to success
+            </div>
+            <div class="picture pic2 md-heading text-white">
+                if you cant feed 100 people feed just one
+            </div>
+            <div class="picture pic3 md-heading text-white">
+                If you want to be rich simply serve more people
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container container">
+        <div class="leftside">
+            <img src="./img/contact.jpg" alt="">
+        </div>
+        <div class="content">
+            <h3 class="md-heading">CONTACT US</h3>
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Email">
+            <textarea name="" id="" cols="30" rows="10" placeholder="type your message here"></textarea>
+            <a href="#" class="btn">Submit</a>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="social-media">
+            <i class="fab fa-linkedin fa-1.5x"></i>
+            <p>Foundation &copy;2021 all rights reserved</p>
+        </div>
+        
+    </footer>
+    <!-- ######################## for smooth scrolling ####################### -->
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+</body>
+</html>
